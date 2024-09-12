@@ -1,5 +1,9 @@
-packages=(gnumeric textstudio )
+ssh olav@192.168.1.58 -t "sudo apt update"
 
-sudo apt-get -y --ignore-missing install "${pkgs[@]}"
+ssh olav@192.168.1.58 -t "sudo apt install gnumeric"
 
-flatpak install -y keyrack
+ssh olav@192.168.1.58 -t "sudo apt install texstudio"
+
+ssh olav@192.168.1.58 -t "sudo apt install flatpak"
+
+ssh olav@192.168.1.58 -t "flatpak install keyrack"
