@@ -1,4 +1,4 @@
-  GNU nano 7.2                                       /tmp/crontab.e15vjT/crontab                                                 
+GNU nano 7.2               /tmp/crontab.wUO0Vk/crontab                        
 # minute (m), hour (h), day of month (dom), month (mon),
 # and day of week (dow) or use '*' in these fields (for 'any').
 # 
@@ -17,5 +17,4 @@
 # m h  dom mon dow   command
 
 0 10 * * 1 sudo apt update && sudo apt upgrade
-@reboot sleep 60 && ssh elev@192.168.1.22 'echo "Olav logga inn $(date)" /home/elev/Documents/vurdering/textfile.txt'
-
+@reboot sleep 60 && /home/olav/bin/logg
